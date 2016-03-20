@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner" />
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/dataPick"
+        android:text="日期选择"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/timePick"
+        android:text="时间选择"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/newTextPage2"
+        android:text="tabbed"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/newTextPage"
+        android:text="新的测试页面"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="世界上最大的海洋是？"
+    />
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rb1"
+                android:text="A.大西洋"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="B.太平洋"
+                android:id="@+id/rb2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="C.印度洋"
+                android:layout_weight="1"
+                android:id="@+id/rb3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="D.北极洋"
+                android:id="@+id/rb4"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </RadioGroup>
+<Button
+    android:id="@+id/submit"
+    android:text="提交"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你喜欢"
+        android:id="@+id/title" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="苹果"
+            android:id="@+id/cb1" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="梨"
+            android:id="@+id/cb2" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="桃子"
+            android:id="@+id/cb3" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="西瓜"
+            android:id="@+id/cb4" />
+
+    </LinearLayout>
+<TextView
+    android:id="@+id/selection"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    />
+    <com.example.zhenmin.justplay.MyRect
+        xmlns:justplay="http://schemas.android.com/apk/res/com.example.zhenmin.justplay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        justplay:rect_color="#acacac"
+        />
+
+    <EditText
+        android:id="@+id/et_speech"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_textToSpeech"
+        android:layout_width="wrap_content"
+        android:text="textToSpeech"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="显示联系人数据"
+        android:id="@+id/showContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
